@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_with_apis/features/home/home_page.dart';
 import 'package:flutter_bloc_with_apis/features/posts/ui/posts_page.dart';
 
-
-
-void main() async{ 
-  runApp(new MyApp());
+void main() async {
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -14,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      debugShowCheckedModeBanner: false, 
+      debugShowCheckedModeBanner: false,
       home: PostsPage(),
     );
   }

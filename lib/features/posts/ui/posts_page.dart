@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_with_apis/features/posts/bloc/posts_bloc.dart';
 
@@ -24,10 +22,10 @@ class _PostsPageState extends State<PostsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Posts Page'),
+          title: const Text('Posts Page'),
         ),
         floatingActionButton: FloatingActionButton(
-            child: Icon(Icons.add),
+            child: const Icon(Icons.add),
             onPressed: () {
               postsBloc.add(PostAddEvent());
             }),

@@ -1,6 +1,4 @@
 part of 'posts_bloc.dart';
-
-@immutable
 abstract class PostsState {}
 
 abstract class PostsActionState extends PostsState {}
